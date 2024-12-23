@@ -1,0 +1,709 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General body styling for font and overall layout */
+body {
+  font-family: Arial, sans-serif;
+}
+/* ------------------------------------------------------------------------------------------------------------ */
+/*Styling for the navigation bar */
+.nav-bar {
+  display: flex;
+  align-items: center; /* Vertically center content in the navbar */
+  width: 100%;
+  height: 65px;
+  background-color: black;
+  color: white;
+  padding: 0 20px; /* Add some padding for spacing on the sides */
+}
+/* Styling for h3 header on nav-bar*/
+h3 {
+  margin: 0;/* Remove default margin for a cleaner layout */
+  padding-left: 60px;
+  font-weight: 200;
+  font-size: 25px;
+}
+
+/* Styling for the left section of the navigation bar */
+
+.nav-left-sec {
+  display: flex; /* Ensure items are inline */
+  align-items: center; /* Vertically center items in the navbar */
+  margin-left: 34px;
+}
+
+/* Styling for the unordered list inside the left section of the navigation bar */
+.nav-left-sec ul {
+  display: flex;/* Arrange list items in a row */
+  list-style: none;/* Remove default bullet points */
+  margin: 0;
+  gap: 30px;
+}
+/* Styling for anchor links inside the unordered list in the left section of the navbar */
+.nav-left-sec ul a{
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Styling for the down chevron icon */
+.fa-chevron-down{
+  font-size: 10px;
+  padding-left: 10px;
+}
+
+/* Styling for the right section of the navigation bar */
+
+.nav-right-sec {
+  margin-left: auto; /* Push the nav-right-sec to the right */
+  display: flex; /* Ensure items are inline */
+  align-items: center; /* Vertically center items in the navbar */
+  margin-right: 60px;
+}
+
+/* Styling for the unordered list inside the right section of the navigation bar */
+
+.nav-right-sec ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  gap: 26px;
+  align-items: center;
+}
+
+/* Styling for anchor links inside the unordered list in the right section of the navbar */
+
+.nav-right-sec ul a{
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+/* Styling for the globe icon on the navbar */
+.fa-globe{
+  font-size: 15px;
+  padding-right: 10px;
+}
+
+/* Styling for the Sign Up button in the navbar */
+button {
+  width: 70px;
+  height: 35px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;/* Change the cursor to a pointer when hovering over the button */
+  border-radius: 50px;/* Round the corners to create a pill shape */
+  font-size: 14px;
+}
+/* Styling for hower effect */
+button:hover {
+  background-color: gray;
+  color: white;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/*section-1*/
+.first-container{
+  display: flex;
+}
+/* styling for the form and map container*/
+.sec-1{
+  margin-top: 60px;
+  margin-left: 150px;
+  width: 500px;
+  height: 300px;
+}
+/* styling for the main heading on section-1 */
+.sec-1 p{
+  font-size: 45px;
+  font-weight: 600;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5em;
+}
+/* container for the map */
+.first-container img{
+  margin-top: 60px;
+  margin-left: 100px;
+  width: 550px;
+  height: 550px;
+}
+ /* style for form,s first input section --location */
+.loc-and-des{
+  margin-top: 20px;
+  width: 400px;
+  height: 50px;
+  background-color: rgb(243, 243, 243);
+  border-radius: 10px;
+  display: flex;
+  padding-top: 15px;
+}
+/* style for form,s input */
+.loc-and-des input{
+  border: none;
+  padding-left: 20px;
+  background: none;
+  font-size: 15px;
+}
+/* style for the icon of pickup location*/
+.fa-circle{
+  font-size: 9px;
+  padding-top: 5px;
+  padding-left: 20px;
+}
+
+/* style for the icon of paper plane*/
+.fa-paper-plane{
+  margin-left: auto;/* pushes the element to the right */
+  margin-right: 15px;
+}
+/* style for the square icon */
+.fa-square{
+  font-size: 10px;
+  padding-top: 5px;
+  padding-left: 20px;
+}
+.small-vertical-line {
+  position: absolute;/* Positioning the element absolutely within its containing element */
+  width: 1px;              /* Line thickness */
+  height: 50px;            /* Line height */
+  background-color: black; /* Line color */
+  margin-left: 24px;
+  margin-top: 55px;
+}
+/* style For Date and Time input container */
+.two-input{
+  display: flex;
+  gap: 7px;
+}
+/* style for Date input with calendar icon */
+.date-and-time{
+  margin-top: 20px;
+  width: 195px;
+  height: 50px;
+  background-color: rgb(243, 243, 243);
+  border-radius: 10px;
+  display: flex;
+  padding-top: 15px;
+}
+/* style for form,s input on sec-1  */
+.date-and-time input{
+  border: none;
+  padding-left: 55px;
+  background: none;
+  font-size: 15px;
+  align-items: center;
+  position: absolute;
+}
+/* style for the calander icon */
+.fa-calendar-day{
+  padding-left: 20px;
+}
+/* style for the clock icon */
+.fa-clock{
+  padding-left: 20px;
+}
+/* style for the down arrow icon */
+.fa-caret-down{
+  margin-left: auto;
+  margin-right: 15px;
+}
+/* style for Button to see the prices */
+.sec-1 button{
+  background-color: black;
+  color: white;
+  margin: 20px;
+  width: 130px;
+  height: 50px;
+  margin-left: 0;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/*section-2*/
+
+/* styling for a space for the sec-2 */
+.sec-2{
+  margin-left: 150px;
+  margin-top: 100px;
+}
+/* styling for the paragraph in the sec-2 */
+.sec-2 p{
+  font-size: 30px;
+  font-weight: 600;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/* styling for the two container in the section two for athe two contents in one line */
+.ride-and-reserve{
+  display: flex;
+  gap: 20px;
+}
+/* styling for the two seperate containers inside the .ride-and-reverse class */
+.two-container{
+  margin-top: 20px;
+  width: 400px;
+  height: 180px;
+  background-color: rgb(243, 243, 243);
+  border-radius: 10px;
+  padding-top: 15px;
+}
+/* styling for the contents inside (paragraphs,button,image) in one line */
+.inside-1{
+  display: flex;
+}
+/* styling for the left side contents */
+.inside{
+  width: 220px;
+  height: 45px;
+}
+/* styling for the images in the container inside-1 */
+.image-container{
+  display: flex;
+  width: 15px;
+  height: 90px;
+}
+/* styling for the h4 tag in the container inside-1 */
+.two-container h4{
+  font-size: 15px;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+/* styling for the paragraph in .two-container */
+.two-container p{
+  font-size: 11px;
+  font-weight: 200;
+  padding-left: 15px;
+  padding-top: 10px;
+  line-height: 2;
+}
+/* styling for the bothnimages */
+.image-container img{
+  padding-left: 30px;
+  width: 160px;
+  height: 120px;
+}
+/* styling the Button to view more details */
+.inside button{
+  background-color: white;
+  color: rgb(10, 10, 10);
+  border: none;
+  border-radius: 50px;
+  font-size: 13px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/*section-3*/
+/* styling for section-3 containing login prompt and image */
+.sec-3{
+  margin-left: 150px;
+  margin-top: 150px;
+  display: flex;
+  gap: 100px;
+}
+/* this container for a space for the section-3 */
+.second-container{
+  width: 450px;
+  height: 500px;
+}
+/* Styling the section-3 image */
+.second-container-image{
+  width: 600px;
+  height: 500px;
+}
+/* styling the first  paragraph in the section-3 */
+.first1-p{
+  padding-top: 10px;
+  font-size: 50px;
+  font-weight: 700;
+}
+/* styling the second paragraph in the section-3 */
+.first2-p{
+  padding-top: 35px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  font-weight: 200;
+  color: rgb(48, 48, 48);
+}
+/* styling for the button in the section-3 */
+.second-container button{
+  margin-top: 30px;
+  width: 230px;
+  height:50px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  background-color: black;
+}
+/* styling for space for the link */
+.log-link {
+  padding-top: 30px; /* Add padding above the container */
+}
+/* styling for the Link for sign up */
+.log-link a {
+  color: black;
+  text-underline-offset: 7px;
+  text-decoration-color: rgb(181, 181, 181);
+}
+/* styling for the image in the sec-3 */
+.second-container-image img{
+  width: 600px;
+  height: 400px;
+}
+/* ------------------------------------------------------------------------------------------------------------ */
+/*section-4*/
+/* styling for a space for the sec-4 */
+.sec-4{
+  margin-left: 150px;
+  margin-top: 50px;
+  display: flex;
+  gap: 80px;
+}
+/* styling for the image space in the sec-4 */
+.third-container-image{
+  width: 600px;
+  height: 500px;
+}
+/* styling for the image in the section-4 */
+.third-container-image img{
+  width: 550px;
+  height: 550px;
+}
+/* styling for the text and button link spaces in section-4 */
+.third-container{
+    width: 450px;
+    height: 500px;
+}
+/* styling for the first paragraph in the sec-4 */
+.second1-p{
+  margin-top: 100px;
+  font-size: 50px;
+  font-weight: 700;
+}
+/* styling for the second paragraph in the sec-4 */
+.second2-p{
+  padding-top: 35px;
+  line-height: 1.5;
+  font-weight: 200;
+  color: rgb(48, 48, 48);
+}
+/* style for the button in the section-4 */
+.sec-4 button{
+  margin-top: 30px;
+  width: 130px;
+  height:50px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  background-color: black;
+}
+/* styling fot Change link color to black and remove underline  of the link*/
+.sign-in-link {
+  padding-left: 10px;
+  color: black; 
+  text-underline-offset: 7px; /* Set link color to black */
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/*section-5*/
+.sec-5{
+  margin-left: 150px;
+  margin-top: 150px;
+  display: flex;
+  gap: 120px;
+}
+/* styling for the text and button link spaces in section-4 */
+.fourth-container{
+  width: 450px;
+  height: 500px;
+}
+/* styling for the images space in the second container */
+.fourth-container-image{
+  width: 600px;
+  height: 500px;
+}
+/*styling for the first paragraph in the section-5*/
+.fourth1-p{
+  padding-top: 100px;
+  font-size: 50px;
+  font-weight: 700;
+}
+/*styling for the second paragraph in the section-5*/
+
+.fourth2-p{
+  padding-top: 35px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  font-weight: 200;
+  color: rgb(48, 48, 48);
+}
+/* styling for the button in the section-5 */
+.fourth-container button{
+  margin-top: 30px;
+  width: 150px;
+  height:50px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  background-color: black;
+}
+/* styling for the space for the link */
+
+.log-link {
+  padding-top: 30px; /* Add padding above the container */
+}
+/* styling for the Link */
+
+.log-link a {
+  color: black;
+  text-underline-offset: 7px;
+  text-decoration-color: rgb(181, 181, 181);
+}
+/* styling for the images in the second container */
+.fourth-container-image img{
+  width: 570px;
+  height: 570px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/*section-6*/
+
+.sec-6{
+  margin-left: 150px;
+  margin-top: 200px;
+  display: flex;
+  gap: 80px;
+}
+/* styling for the image space in the sec-6*/
+
+.fifth-container-image{
+  width: 600px;
+  height: 500px;
+}
+/* styling for the image in the sec-6 */
+.fifth-container-image img{
+  width: 550px;
+  height: 550px;
+}
+/* styling the space for paragraphs,button */
+.fifth-container{
+    width: 450px;
+    height: 500px;
+}
+/* styling the first paragraph in section-6 */
+.fifth1-p{
+  margin-top: 150px;
+  font-size: 30px;
+  font-weight: 700;
+}
+/* styling the second paragraph in section-6 */
+.fifth2-p{
+  padding-top: 35px;
+  line-height: 1.5;
+  font-weight: 200;
+  color: rgb(48, 48, 48);
+}
+/* styling the button in section-6 */
+.sec-6 button{
+  margin-top: 30px;
+  width: 130px;
+  height:50px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  background-color: black;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* Section: App Download Options */
+
+/* styling for the spaces for the second last container */
+.sec-last-container{
+  margin-top: 115px;
+  width: 100%;
+  height: 400px;
+  background-color: rgb(237, 237, 237);
+}
+/*styling for the paragraph in the second last container*/
+.sec-last-container p{
+  margin-left: 150px;
+  padding-top: 65px;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -2px;
+}
+/* styling for spaces for the scanner-container */
+.scanner-container{
+  display: flex;
+  margin-left: 150px;
+  gap: 30px;
+}
+/* styling the spaces for the two containers in one line and fix its size */
+.scanner{
+  display: flex;
+  margin-top: 40px;
+  width: 550px;
+  height: 200px;
+  background: white;
+}
+/* styling for the scanner image in the section */
+.scan-img img{
+  width:150px;
+  margin: 25px;
+}
+/* styling the section for download option */
+.download{
+  padding-top: 70px;
+}
+/* styling the h4 content in the section */
+.download h4{
+  margin-top: 5px;
+  font-weight: 200;
+}
+/* styling the icon */
+.down-and-arrow{
+  display: flex;
+}
+/* styling the icon */
+.fa-arrow-right{
+  padding-left: 40px;
+  margin-top: 90px;
+  font-size: 20px;
+}
+/*final container */
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* footer */
+/* styling the final spaces for the page */
+.final{
+  width: 100%;
+  height: 970px;
+  background-color: black;
+}
+/* styling the containers spaces */
+.final-container{
+  padding-left: 100px;
+  padding-top: 100px;
+}
+/* styling the text in the footer */
+.final-container h3{
+  color: white;
+}
+/* styling the paragraph in the footer */
+.final-container p{
+  color: white;
+  padding-left: 60px;
+  padding-top: 40px;
+}
+/* styling a space for the menu items */
+.footer-menu{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 90px;
+  padding-left: 60px;
+  padding-right: 230px;
+  margin: 0;
+}
+/* styling the links spaces */
+.footer-menu ul{
+  padding: 0;
+  list-style: none;
+  padding-top: 10px;
+}
+/* styling the h3 content in the list */
+.footer-menu h3{
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  padding-left: 0px;
+}
+/* styling the links */
+.footer-menu a{
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 200;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 2.5;
+}
+/* styling for the second last content in the footer in one line */
+.link-location{
+  display: flex;
+}
+/* styling for the social media links */
+.socialmedialinks{
+  display: flex;
+  gap: 80px;
+  padding-top: 90px;
+  padding-left: 60px;
+  font-size:18px;
+  color: white;
+}
+/* stylinf for the right side contents in the footer */
+.language-location{
+  padding-top: 90px;
+  margin-left: 500px;
+  display: flex;
+  gap: 20px;
+}
+/* styling the button in the footer */
+.language-location button{
+  color: white;
+  display: flex;
+  padding-top: 7px;
+  width: 80px;
+  background-color: black;
+}
+/* styling only the second button on right side */
+.language-location button:nth-child(2){
+  margin-left: 10px;
+  gap: 10px;
+}
+/* styling the image space on footer */
+.playstore-img{
+  display: flex;
+  padding-top: 50px;
+  padding-left: 40px;
+}
+/* styling the image on footer */
+.playstore-img img{
+  width: 160px;
+  height: 40px;
+}
+/* styling the footer content's space */
+footer {
+  display: flex;
+  padding-top: 40px;
+  font-size: 13px;
+}
+/* styling the footer paragraph */
+footer p {
+  color: grey; /* Sets the color of all <p> tags inside <footer> to grey */
+  margin: 0;   /* Removes default margin for consistent spacing */
+}
+/* styling  the final content in the footer */
+.final-div {
+  display: flex;
+  gap: 5px;     /* Adds spacing between the <p> elements */
+  padding-left: 640px; /* Adjust as needed for alignment */
+}
+
+
+
+
